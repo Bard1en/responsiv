@@ -1,36 +1,30 @@
 .wrapper{
     width:100%;
     height:100%;
-    margin:0 auto; 
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-areas:
-    "header"
-    "nav"
-    "main"
-    "footer";
 }
-.gul{
-    background-color:yellow;
+main{
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr 1fr;
+   display:grid;
+}
+section{
     width:50vw;
     height:50vh;
 }
-.röd{
-    background-color:red;
-    width:50vw;
-    height:50vh;
+section:nth-child(1){
+background-color:red;
 }
-.grön{
-    background-color: green;
-    width:50vw;
-    height:50vh;
-}
-.blå{
+section:nth-child(2){
     background-color:blue;
-    width:50vw;
-    height:50vh;
 }
-table{
-    width:100%;
-    height:100%;
+section:nth-child(3){
+    background-color:green;
 }
-@media screen(max-width 800px)
+section:nth-child(4){
+    background-color:yellow;
+}
+@media screen and (max-width:800px){
+    h1{
+        font-size:90%;
+    }
+}
